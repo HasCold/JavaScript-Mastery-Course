@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500&family=Noto+Sans:wght@200&display=swap');
+
+/* Eye Dropper Tool is also used to crete this web page; */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+*{
+    /* box-sizing: border-box mane isliye de kuyn ke kisi element ko agr mane 300px di aur padding 10px di tu uski px 310px na hogae isliye border-box kiya */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;   
+}
+.header{
+    min-height: 60vh;
+    background: url(pexels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+.nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.headline{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.headline h2{
+    padding-bottom: 5vh;
+}
+.btn{
+    display: inline-block;
+    outline: none;
+    border:  none;
+    cursor: pointer;
+}
+.btn-headline{
+    /* rem -->> root element */
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500px;
+}
+.section-todo{
+    margin-top: 5rem;
+    text-align: center;
+}
+.section-todo h2{
+    margin-bottom: 2rem;
+}
+.bg-dark{
+    background-color: black;
+    color: white;
+}
+.form-todo{
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.form-todo input{
+    min-height: 100%;
+}
+.form-todo input[type="text"]{
+    width: 78%;    
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+.form-todo input[type="submit"]{
+        width: 20%;
+        background-color: #6c6652;
+        color: white;
+}
+.todo-list{
+    text-align: center;
+    font-size: 1.2rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+.todo-list li{
+    padding: 0.7rem;
+    background: #444;
+    color: cyan;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.section-signup{
+    margin-top: 5rem;
+    text-align: center;
+    background: rgb(217, 213, 213);
+    border-right: 10px;
+}
+.signupform{
+    max-width: 800px;
+    width: 95%;
+    text-align: left;
+}
+.signupform label{
+        display: block;
+    margin-left: 8rem;
+    }
+    .signupform input{
+        margin-left: 8.5rem;
+        padding: 0.5rem;
+        display: block;
+        width: 100%;
+}
+.signupform textarea{
+    margin-left: 8.5rem;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+}
+.form-group{
+    margin-top: 1rem;
+}
+.button{
+    margin-left: 30vw;
+    margin-top: 1rem;
+}
+.signup-btn{
+    background:  #6c6652;
+    color: white;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.signup-btn:hover{
+    background: black;
+}
+
+
+
+
+
+
+
+
+

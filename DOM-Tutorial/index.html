@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser sab se pehle hamari html file ko parse karega then phr load  karega hamari JS file ko aur phr execute hogi file-->
+    <!-- Html -- Parse -->
+    <!-- JS -- Load     Synchorous Way -->
+    <!-- JS -- Execute  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- async(Ek sath) -- Means Ham ne browser ko kaha Parsing bhi hoti rahegi and JS ki file load bhi hoti rahegi  -->
+    <!-- Below method is the way to attach JS file with html But phr bhi jab hamari adhi file parse hogi aur agr baki  file execute hogai tu error ane k chances rehange so it is not recommended  to use -->
+    <!-- <script src="script.js" async></script> -->
+    <!-- Another way we have a defer matlab parsing bhi chal rahi ha aur JS file bhi load horahi ha ak sath and agr file beech ma load hogai tu browser kahega pehele ma parsing krlo then JS file phele hi load ho rakhi thi phr usko execute karega so it is the best way to attach the JS file with html file  -->
+    <script src="Project_usingEventDelegation.js" defer></script>
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-items"><a href="#home">Home</a></li>
+                <li class="nav-items"><a href="">Todo</a></li>
+                <li class="nav-items"><a href="">Sign Up</a></li>
+            </ul>  
+        </nav> 
+        <div class="headline">
+            <h2 id="main-heading">Manage your tasks <span style="display: none;">Hello</span></h2>
+            <button><div class="btn btn-headline">Learn More</div></button>
+        </div>
+    </header>
+    <section class="section-todo container">
+        <h2>Your Plan Today</h2>
+    <!--     todo form         -->
+        <form class="form-todo">
+            <input type="text" name="" id="" placeholder="Add Todo">
+            <input type="submit" name="" id="" value="Add Todo" class="btn">
+        </form>
+
+
+        <!-- ul.todo-list>li{todo 1}  -->
+        <!-- <li>todo 1</li> -->
+        <!-- li{item $}*5 :- Short cut way-->
+        <ul class="todo-list">
+            <li>
+                <span class="text">Do this do that</span>
+                <div class="todo-buttons">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form class="signupform">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="About">About Yourself</label>
+                <textarea name="About" id="" cols="50" rows="10"></textarea>
+            </div>
+            <button type="submit" class="button signup-btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
